@@ -1,5 +1,5 @@
 {
-  "name": "troydavisson/phrets",
+  "name": "nuagemtl/PHRETS",
   "type": "library",
   "license": "MIT",
   "description": "RETS library in PHP",
@@ -7,12 +7,12 @@
     "rets",
     "mls"
   ],
-  "homepage": "http://github.com/troydavisson/PHRETS",
+  "homepage": "https://github.com/nuagemtl/PHRETS",
   "authors": [
     {
-      "name": "Troy Davisson",
-      "email": "troy.davisson@gmail.com",
-      "homepage": "http://troda.com",
+      "name": "Nuage",
+      "email": "hello@nuage.ai",
+      "homepage": "http://nuage.ai",
       "role": "Developer"
     }
   ],
