@@ -42,7 +42,7 @@ class Session
     /** @var ResponseInterface */
     protected $last_response;
 
-    public function __construct( Configuration $credentials, $configurations = [] )
+    public function __construct( Configuration $credentials, $configurations = [], $capabilities = [] )
     {
         // save the configuration along with this session
         $this->configuration = $credentials;
@@ -55,6 +55,11 @@ class Session
         // start up the Capabilities tracker and add Login as the first one
         $this->capabilities = new Capabilities;
         $this->capabilities->add( 'Login', $credentials->getLoginUrl() );
+
+        foreach ( $capabilities as $capability ) {
+            $this->capabilities->add( $capability[ 'name' ], $capability[ 'url' ] );
+        }
+
     }
 
     /**
