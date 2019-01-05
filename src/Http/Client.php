@@ -5,21 +5,23 @@ use GuzzleHttp\ClientInterface;
 
 class Client
 {
+
     protected static $client;
 
     /**
+     * @param array $options
      * @return GuzzleClient
      */
-    public static function make($options = [])
+    public static function make( $options = [] )
     {
-        if (!self::$client) {
-            self::$client = new GuzzleClient($options);
+        if ( ! self::$client ) {
+            self::$client = new GuzzleClient( $options );
         }
 
         return self::$client;
     }
 
-    public static function set(ClientInterface $client)
+    public static function set( ClientInterface $client )
     {
         self::$client = $client;
     }
