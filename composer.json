@@ -1,5 +1,5 @@
 {
-  "name": "nuagemtl/PHRETS",
+  "name": "nuagemtl/phrets",
   "type": "library",
   "license": "MIT",
   "description": "RETS library in PHP",
